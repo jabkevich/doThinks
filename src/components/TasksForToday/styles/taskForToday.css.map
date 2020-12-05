@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAQ;EACN,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,sBAAsB;;AAG/C,KAAK;EACH,YAAY,EAAE,iBAAiB;;AAIjC,MAAM;EACJ,WAAW,EAAE,iBAAiB",
+"sources": ["taskForToday.scss"],
+"names": [],
+"file": "taskForToday.css"
+}
