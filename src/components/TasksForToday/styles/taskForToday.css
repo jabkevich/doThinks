@@ -1,0 +1,12 @@
+.content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) 5fr; }
+
+.left {
+  border-right: 1px solid #B7B0B0; }
+
+.right {
+  border-left: 1px solid #B7B0B0; }
+
+/*# sourceMappingURL=taskForToday.css.map */
