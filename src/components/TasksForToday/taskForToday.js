@@ -1,6 +1,7 @@
 import React from 'react';
 import MenuListComposition from "./loginMenu";
 import NestedList from "./tasks"
+import TaskAnimate from "./taskAnimate"
 import "./styles/taskForToday.scss"
 import {
     BrowserRouter as Router,
@@ -15,6 +16,8 @@ import {
 
 
 class TaskForToday extends React.Component {
+
+
     render() {
         return (
             <div className={"MAINBOX"}>
@@ -25,8 +28,8 @@ class TaskForToday extends React.Component {
                             <NestedList />
                         </div>
                     </div>
-                    <div className={"right"}>
-
+                    <div id="right" className={"right"}>
+                        <TaskAnimate />
                     </div>
                 </div>
             </div>

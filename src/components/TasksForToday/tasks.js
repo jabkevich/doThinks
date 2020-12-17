@@ -13,7 +13,10 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import StarBorder from '@material-ui/icons/StarBorder';
 import DeleteIcon from '@material-ui/icons/Delete';
+import "./styles/tasks.scss"
+
 const useStyles = makeStyles((theme) => ({
+
     root: {
         width: '100%',
         maxWidth: 360,
@@ -24,13 +27,31 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+
+function handleClick1() {
+    let elem = document.getElementById('Task');
+    if(elem.classList.contains("hidden")){
+        elem.classList.remove("hidden");
+        elem.classList.add("animate");
+    }
+    else{
+        elem.classList.add("hidden");
+        elem.classList.remove("animate");
+    }
+
+
+}
+
 export default function NestedList() {
+
+
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
 
     const handleClick = () => {
         setOpen(!open);
     };
+
 
     return (
         <List>
@@ -50,7 +71,7 @@ export default function NestedList() {
                         </ListItemIcon>
                         <ListItemText primary="Ui" />
                     </ListItem>
-                    <ListItem button className={classes.nested}>
+                    <ListItem button className={classes.nested} onClick={handleClick1}>
                         <ListItemIcon>
                             <DeleteIcon />
                             <StarBorder />

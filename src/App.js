@@ -13,7 +13,6 @@ import TaskForToday from "./components/TasksForToday/taskForToday";
 export default function NoMatchExample() {
     return (
         <Router>
-            <div className={"MAINBOX"}>
                 <Switch>
                     <Route exact path="/">
                         <Authoriztion />
@@ -22,7 +21,6 @@ export default function NoMatchExample() {
                         <TaskForToday />
                     </Route>
                 </Switch>
-            </div>
         </Router>
     );
 }
